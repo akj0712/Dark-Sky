@@ -1,0 +1,291 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+:root {
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    margin: 0;
+}
+
+.main-menu {
+    background-color: var(--main-bg);
+}
+
+.navbar {
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: 2rem 0;
+}
+
+.navbar li {
+    margin-left: 2rem;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+.navbar-toggler-icon {
+    background-color: grey;
+}
+
+.fa-snowflake {
+    transition: all linear;
+    animation: rotate 2s linear infinite;
+    color: var(--main-color);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ** main header */
+
+.main-header-left {
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-header-left p {
+    font-size: 2.5rem;
+}
+
+.main-header-left h1 {
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+
+.main-header-left .text_clr {
+    color: var(--main-color);
+}
+
+.main-header-left button {
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    outline: none;
+}
+
+.main-header-left button:hover {
+    box-shadow: var(--main-color) 0px 13px 27px -5px,
+        var(--main-color) 0px 8px 16px -8px;
+}
+
+.main-header-right {
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* ** about me page style */
+.akj {
+    border: none;
+    display: block;
+    max-width: 450px;
+    max-height: 450px;
+    border-radius: 50px 25%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+        rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    width: auto;
+    height: auto;
+}
+
+/* ** error page style  */
+.error404 {
+    border-radius: 2rem;
+    width: 60rem;
+    height: 30rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* ** footer code */
+
+footer {
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 5rem;
+    font-size: 1.4rem;
+}
+
+/* ** temperature input fields style code  */
+.temp-form {
+    width: 60%;
+    position: relative;
+    margin: 10rem auto 5rem;
+}
+
+.temp-form input[type="text"] {
+    width: 100%;
+    padding: 1rem 1rem 1rem 2rem;
+    background: #1e202b;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    border-radius: 3rem;
+}
+
+::placeholder {
+    color: #bfc1c8;
+}
+
+.temp-form input[type="submit"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009ad8;
+    padding: 0 3rem;
+    border-radius: 3rem;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.temp-form input[type="submit"]:hover {
+    color: #009ad8;
+    background-color: #fff;
+}
+
+/* ** temp details show here  */
+.temp-info {
+    width: 55rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    /* padding: 1rem; */
+    font-family: "Cascadia Code", sans-serif;
+}
+
+.top-layer {
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.top-layer p {
+    color: #fff;
+    font-weight: 300;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.main-layer {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.main-layer #output {
+    padding: 2rem 0;
+    color: #bfc1c8;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.main-layer .middle-layer {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.main-layer .middle-layer p,
+.main-layer .middle-layer .fa-solid {
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+.fa-solid {
+    color: #009ad8;
+}
+
+sup {
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+
+.data-hide {
+    visibility: hidden;
+    transition: all 0.3 linear;
+}
+
+/* ** Responsive code */
+@media (max-width: 768px) {
+    .main-header-left {
+        height: auto;
+        margin: 5rem;
+    }
+
+    .main-header-right {
+        height: auto;
+        margin-top: 5rem;
+    }
+
+    .temp-form {
+        width: auto;
+    }
+
+    .temp-info {
+        width: auto;
+    }
+
+    .main-layer .middle-layer p,
+    .main-layer .middle-layer .fa-solid {
+        font-size: 5rem;
+        font-weight: 900;
+    }
+}
