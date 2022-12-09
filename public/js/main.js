@@ -8,7 +8,7 @@ const tempStatus = document.getElementById("temp-status");
 const todayDate = document.getElementById("today-date");
 const day = document.getElementById("day");
 const dataHide = document.querySelector(".middle-layer");
-const apiKey = "SECRET-KEY";
+const apiKey = "58ad55e03d49b9a572156972c836acec";
 
 const weekNames = [
     "Sunday",
